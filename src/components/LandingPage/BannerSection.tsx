@@ -19,7 +19,11 @@ export default function BannerSection() {
       >
         <Flex maxW={'1240px'} w='100%' justify={'space-between'}>
 
-          <Box >
+          <Flex 
+            flexDirection={'column'}
+            justify={['flex-start', 'flex-start','center']}
+            // alignItems={'center'}
+          >
 
             <Heading 
               as="h1"
@@ -42,7 +46,7 @@ export default function BannerSection() {
             >
               Chegou a hora de tirar do papel a viagem que você sempre sonhou. 
             </Text>
-          </Box>
+          </Flex>
 
           {isWideVersion && (
           <Box>
