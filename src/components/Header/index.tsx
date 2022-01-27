@@ -18,11 +18,13 @@ export default function Header() {
       my='4'
       w='100%'
       align={'center'}
+      maxW={'1240px'}
+      mx='auto'
     > 
 
         {asPath !== '/' ?
             <Link href="/" passHref >
-              <ChackraLink cursor='pointer'>
+              <ChackraLink pl='2' cursor='pointer' >
                 <RiArrowDropLeftLine size={24}/>
 
               </ChackraLink>
@@ -35,6 +37,8 @@ export default function Header() {
           justifyContent={'center'} 
           w='100%'
           h={[6, 6, 6, 12]}
+          pr='2'
+          
         >
           <Image src={Logo} alt='logo' />
         </Flex>

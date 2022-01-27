@@ -16,6 +16,7 @@ export default function BannerSection() {
         px="4"
         py="7"
         
+        
       >
         <Flex maxW={'1240px'} w='100%' justify={'space-between'}>
 

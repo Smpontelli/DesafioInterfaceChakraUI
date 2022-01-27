@@ -1,4 +1,4 @@
-import {Heading, Box, Flex, Text, Center, useBreakpointValue, Image} from '@chakra-ui/react'
+import {Heading, Flex, Center} from '@chakra-ui/react'
 
 export default function BannerSectionContinent(continent) {
 
@@ -11,7 +11,8 @@ export default function BannerSectionContinent(continent) {
         py="7"
         h={["150px" , "350px", "500px", "500px"]}    
       >
-        <Flex w='100%' justify={'center'}>
+        <Flex w='100%' justify={['center', 'center', 'flex-start']} maxW={'1240px'} alignItems={['center', 'center', 'flex-end']} h='100%'
+      mx='auto'>
 
           <Heading 
             as="h2"

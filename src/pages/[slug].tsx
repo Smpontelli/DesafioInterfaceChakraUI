@@ -1,6 +1,8 @@
 import { GetServerSideProps } from "next";
-import BannerSectionContinent from "../components/Continents/BannerSectionContinent";
 import Header from "../components/Header";
+import BannerSectionContinent from "../components/Continents/BannerSectionContinent";
+import DescriptionDetailsContent from "../components/Continents/DescriptionDetailsContent";
+import Cities100More from "../components/Continents/Cities100More";
 
 export default function Continentes(response) { 
 
@@ -8,6 +10,8 @@ export default function Continentes(response) {
         <>
             <Header/>
             <BannerSectionContinent continent={response}/>
+            <DescriptionDetailsContent continent={response}/>
+            <Cities100More continent={response}/>
         </>
     )
 }
